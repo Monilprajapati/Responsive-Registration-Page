@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 5px;
+  background-color: lightgray;
+  padding: 15px;
+}
+
+.form-box {
+  min-width: 480px;
+  min-height: 530px;
+  height: auto;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 3px 10px 4px darkgray;
+}
+
+.name {
+  display: flex;
+  /* flex-grow: 1; */
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.in-fname,
+.in-lname,
+.in-email,
+.in-pw,
+.in-confirmpw {
+  margin-top: 8px;
+  padding: 6px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+input::placeholder {
+  font-size: 15px;
+  text-align: start;
+  outline: none;
+}
+input:hover::placeholder {
+  color: black;
+}
+input:focus::placeholder {
+  color: gray;
+}
+
+input:focus {
+  border-bottom: 1px solid black;
+}
+input {
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+}
+
+.mail {
+  padding: 20px;
+}
+
+.in-email {
+  padding-right: 300px;
+}
+
+.pws {
+  display: flex;
+  /* flex-grow: 1; */
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.gender {
+  padding: 20px;
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.m-label,
+.f-label {
+  margin-left: 8px;
+}
+
+.check-m,
+.check-f {
+  display: flex;
+}
+
+.check-f {
+  margin-left: 10px;
+}
+
+.submit {
+  padding: 15px;
+  display: flex;
+}
+
+.submitBtn {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+  width: auto;
+  padding-left: 40%;
+  padding-right: 40%;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.submitBtn:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+
+@media (max-width: 529px) {
+
+
+    .heading{
+        font-size: 12px;
+    }
+
+    .fname, .lname, .email, .pw, .conf-pwd{
+        font-size: 12px;
+    }
+  .form-box {
+    /* min-width: 480px; */
+    width: 300px;
+    min-height: 530px;
+    margin: 10px;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+
+  .name {
+    display: flex;
+    /* flex-grow: 1; */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  .fname,
+  .lname {
+    margin-top: 10px;
+  }
+
+  .pwd,
+  .conf-pwd {
+    margin-top: 10px;
+  }
+
+  .mail {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .in-fname,
+  .in-lname,
+  .in-email,
+  .in-pw,
+  .in-confirmpw {
+    padding-right: 250px;
+  }
+
+  .in-email {
+    padding-right: 250px;
+  }
+
+  .pws {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width:497px) {
+      .name {
+        display: flex;
+        /* flex-grow: 1; */
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        padding-bottom: 10px;
+      }
+    
+      .fname,
+      .lname {
+        margin-top: 10px;
+      }
+    
+      .pwd,
+      .conf-pwd {
+        margin-top: 10px;
+      }
+    
+      .mail {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    
+      .in-fname,
+      .in-lname,
+      .in-email,
+      .in-pw,
+      .in-confirmpw {
+        padding-right: 250px;
+      }
+    
+      .in-email {
+        padding-right: 250px;
+      }
+    
+      .pws {
+        display: flex;
+        flex-direction: column;
+        /* flex-grow: 1; */
+        justify-content: space-between;
+        padding: 20px;
+        padding-top: 0px;
+      }
+}
